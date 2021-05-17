@@ -42,7 +42,9 @@
     </form>
 
     <?php
- 
+    
+    $password_hash;
+          
     if (isset($_POST['submit'])) {
         
         require_once __DIR__ . '\config.php';
@@ -60,9 +62,6 @@
         $first_name	= $_POST['first_name'];
         $last_name	= $_POST['last_name'];
         $email	= $_POST['email'];
-
-        //Opcja hashowania haseł w rejestracji
-        $password_hash = password_hash ($password, PASSWORD_DEFEAULT);
         
         if (empty($username) || empty($password) || empty($email)) {
             echo '<p class="red">Login, hasło i email nie mogą być puste</p>';
@@ -106,6 +105,9 @@
                     exit();
                 }
             }
+            
+            //Opcja hashowania haseł w rejestracji
+            $password_hash = password_hash ($password, PASSWORD_DEFAULT);
 
         }
     }
