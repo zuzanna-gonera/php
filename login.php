@@ -31,6 +31,10 @@
 </form>
 <p>Nie jeszcze masz konta? <a href="/php/register.php">Zarejestruj się</a> </p>
 <?php
+    
+        //Opcja hashowania haseł w logowaniu
+        $password_hash = password_hash ($password, PASSWORD_DEFEAULT);
+            
 
 if (isset($_POST['submit'])){
  

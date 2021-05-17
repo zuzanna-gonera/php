@@ -61,6 +61,7 @@
         $last_name	= $_POST['last_name'];
         $email	= $_POST['email'];
 
+        //Opcja hashowania haseł w rejestracji
         $password_hash = password_hash ($password, PASSWORD_DEFEAULT);
         
         if (empty($username) || empty($password) || empty($email)) {
