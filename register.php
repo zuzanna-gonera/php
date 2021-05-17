@@ -98,7 +98,7 @@
 
                 if ($mysqli->query($sql)) {
                   
-                    header('Location: strona_logowania.php');
+                    header('Location: register_fulfilment.php');
                 } else {
                     
                     echo "<p class='red' '>Wystąpił błąd podczas dodawania użytkownika: {$mysqli->connect_error}</p>";

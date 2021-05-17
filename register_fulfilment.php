@@ -16,9 +16,12 @@
 </head>
 <body>
 
+    <div style="text-align:center; margin-top:200px;">
 
     <h1>Rejestracja przebiegła pomyślnie</h1>
-    <a class="btn btn-default" href="/php/login.php">Zaloguj się</a>
+    <a href="/php/login.php" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Zaloguj się</a>
+
+    </div>
     
     <?php
     ?>
