@@ -61,11 +61,13 @@
         $last_name	= $_POST['last_name'];
         $email	= $_POST['email'];
 
+        $password_hash = password_hash ($password, PASSWORD_DEFEAULT);
         
         if (empty($username) || empty($password) || empty($email)) {
             echo '<p class="red">Login, hasło i email nie mogą być puste</p>';
 
         } else {
+            //Sprawdź czy istnieje użytkownik o takim e-mailu i loginie podczas rejestracji
             $isLoginTaken = false;
             $isEmailTaken = false;
             
