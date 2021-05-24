@@ -1,5 +1,3 @@
-sklep.php
-
 <?php
   include('php.php');
   poczatek_sesji();
@@ -7,12 +5,12 @@ sklep.php
 <!doctype html>
 <html>
   <head>
-    <title>Testowanie skryptów PHP</title>
+    <title>Produkty</title>
     <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Sklep internetowy</h1>
-    <p><a href="ksiazki.php">Książki</a></p>
+    <h1>Koszyk</h1>
+    <p><a href="odziez.php">Odzież</a></p>
     <p><a href="akcesoria.php">Akcesoria</a></p>
     <br />
     <form action="sklep.php" method="post">

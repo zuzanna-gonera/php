@@ -5,35 +5,34 @@
 <!doctype html>
 <html>
   <head>
-    <title>Testowanie skryptów PHP</title>
     <meta charset="utf-8" />
   </head>
   <body>
     <h1>Akcesoria</h1>
     <p><a href="sklep.php">Sklep</a></p>
-    <p><a href="ksiazki.php">Książki</a></p>
+    <p><a href="odziez.php">Odzież</a></p>
     <br />
     <form action="akcesoria.php" method="post">
       <p>
         <label><input type="checkbox" name="towary[]"  
-          value="000000Płyta główna" />
-          Płyta główna
+          value="000000Mata" />
+          Mata
         </label>
         , cena<input type="text" name="cena0" value="200" style="width:30px;" />
         , ilość<input type="text" name="ile0" style="width:30px;" />
       </p>
       <p>
         <label><input type="checkbox" name="towary[]"  
-          value="000001Procesor" />
-          Procesor
+          value="000001Gumy sportowe" />
+         Gumy sportowe
         </label>
         , cena<input type="text" name="cena1" value="300" style="width:30px;" />
         , ilość<input type="text" name="ile1" style="width:30px;" />
       </p>
       <p>
         <label><input type="checkbox" name="towary[]"  
-          value="000002Karta graficzna" />
-          Karta graficzna
+          value="000002Kostka do jogi" />
+          Kostka do jogi
         </label>
         , cena<input type="text" name="cena2" value="120" style="width:30px;" />
         , lość<input type="text" name="ile2" style="width:30px;" />
